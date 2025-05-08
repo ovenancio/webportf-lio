@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body {
+
+    background-image: url('IMG/back limpo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #ffffff;
+    height: 100vh;
+
+}
+
+.cabecalho_menu{
+
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho_menu_link{
+ 
+ color: #ffffff;
+ font-size: 1.4rem;
+ font-family: 'Krona One', sans-serif;
+ font-weight: 600;
+}
+
+main {
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 10% 15%;
+
+}
+
+section {/*container secundario*/
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+
+}
+
+.conteudo_esq{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+
+.conteudo__esq_titulo {
+    color:rgb(255, 255, 255);
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    max-width: 450px;
+    margin: 0 0 40px 0;
+
+}
+
+.conteudo__esq_texto {
+
+    font-size: 1.5rem;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+}
+
+.conteudo__esq_botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 50%;
+}
+
+.conteudo_dir {
+    width: 50%;
+    gap: 20px;
+}
+
+.rodapé{
+    background-color: #ffffff;
+    color: black;
+    padding: 21px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    /*altura dos elementos exp: font*/
+    /*largura rodape = largura do body*/
+}
+
+@media (max-width: 1024px) {
+
+    .conteudo{
+        flex-direction: column-reverse;
+    }
+
+
+}
